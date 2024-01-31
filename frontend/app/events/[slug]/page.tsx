@@ -1,7 +1,10 @@
-export default function EventPage() {
+import Layout from "@/components/Layout";
+
+export default function EventPage({ params }: { params: { slug: string } }) {
     return (
-        <div>
+        <Layout>
             <h1>My Event</h1>
-        </div>
+            <h3>{params.slug}</h3>
+        </Layout>
     )
 }

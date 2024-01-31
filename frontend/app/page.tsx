@@ -1,5 +1,12 @@
-export default function Home() {
-  return (<>
-    <p>Home</p>
-  </>)
+import Layout from "@/components/Layout";
+import Head from "next/head";
+import Link from "next/link";
+
+export default function HomePage() {
+  return (
+    <Layout>
+      <h1>Home</h1>
+      <Link href="/about">About</Link>
+    </Layout>
+  )
 }
